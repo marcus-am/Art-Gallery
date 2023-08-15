@@ -12,3 +12,7 @@ form hr {
     margin: 0 0 20px;
     width: 100%;
 }
+
+input[type='submit'] {
+    margin: 10px 0 5px;
+}
