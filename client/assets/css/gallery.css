@@ -1,0 +1,14 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form legend {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form hr {
+    margin: 0 0 20px;
+    width: 100%;
+}

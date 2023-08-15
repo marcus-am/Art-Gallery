@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <script src="./assets/js/gallery.js" defer></script>
+    <script src="./assets/js/logout.js" defer></script>
+    <title>Art-Gallery</title>
+</head>
+<body>
+    <nav>
+        <a id="logout" href="./index.html">Log out</a>
+    </nav>
+    <header>
+        <h1>Art-Gallery: The Space of Creativity</h1>
+        <em>Show your style.</em>
+    </header>
+    <hr />
+    <main>
+        <div class="container" id="images">
+
+        </div>
+        <hr />
+        <form id="post-image-form">
+            <fieldset>
+                <legend>Upload new image</legend>
+                <hr/>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </fieldset>
+            <fieldset>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="image">Image:</label>
+                <input type="file" name="image" accept="image/*">
+            </fieldset>
+            <div>
+                <input type="submit" value="Post Image">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

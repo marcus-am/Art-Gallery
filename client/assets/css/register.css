@@ -1,0 +1,13 @@
+input[type='submit'] {
+    margin: 5px 0;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+fieldset label {
+    margin-right: 10px;
+}
