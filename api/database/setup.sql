@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS user_account;
+DROP TABLE IF EXISTS token;
 
 CREATE TABLE user_account (
     user_id INT GENERATED ALWAYS AS IDENTITY,
@@ -7,7 +8,10 @@ CREATE TABLE user_account (
     PRIMARY KEY (user_id)
 );
 
-INSERT INTO user_account
-    (username, password)
-    VALUES
-    ('Marcus', 'password')
+CREATE TABLE token (
+    token_id INT GENERATED ALWAYS AS IDENTITY,
+    user_id INT NOT NULL,
+    token CHAR(36) UNIQUE NOT NULL,
+    PRIMARY KEY (token_id),
+    FOREIGN KEY (user_id) REFERENCES user_account("user_id")
+)
